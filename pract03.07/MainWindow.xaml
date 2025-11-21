@@ -23,7 +23,7 @@
         <Label Content="Разница:" Grid.Column="1" Grid.Row="4" FontSize="14" Padding="5,-5,5,5"/>
         <Label Content="Грузоподъёмность:" Grid.Column="1" Grid.Row="1" FontSize="14" Padding="5,0,5,5"/>
         <Label Content="Имя:" Grid.Column="1" FontSize="14" Padding="5,0,5,5"/>
-        <ListBox SelectionChanged="lbLCS" x:Name="lbShipsList" Grid.RowSpan="6" SelectionMode="Multiple"/>
+        <ListBox x:Name="lbShipsList" Grid.RowSpan="6" SelectionMode="Multiple"/>
         <Button x:Name="btnAdd" Grid.Column="2" Grid.Row="0" Content="Добавить" Width="100" Height="50" Margin="0,5,0,0" Click="btnAdd_Click"/>
         <Button x:Name="btnDelete" Grid.Column="2" Grid.Row="1" Content="Удалить" Width="100" Height="50" Click="btnDelete_Click"/>
         <Button x:Name="btnClone" Grid.Column="1" Grid.Row="2" Content="Клонировать" Width="100" Height="50" Click="btnClone_Click"/>

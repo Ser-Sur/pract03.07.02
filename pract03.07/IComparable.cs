@@ -8,6 +8,6 @@ namespace pract03._07
 {
     internal interface IComparable
     {
-        int CompareTo(object obj);
+        string CompareTo(object obj);
     }
 }

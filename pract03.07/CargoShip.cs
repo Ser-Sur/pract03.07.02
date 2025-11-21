@@ -26,9 +26,16 @@ namespace pract03._07
             this.loadCapacity = loadCapacity;
         }
 
-        public string ToString()
+        public override string ToString()
         {
             return $"Корабль '{this.name}' имеет грузоподъёмность в {this.loadCapacity} кг.";
+        }
+
+        public object Clear()
+        {
+            this.name = null;
+            this.loadCapacity = 0;
+            return this;
         }
 
         public object Clone()
@@ -39,10 +46,11 @@ namespace pract03._07
             return cS;
         }
 
-        public int CompareTo(object obj)
+        public string CompareTo(object obj)
         {
             CargoShip cS = (CargoShip)obj;
-            return Math.Abs(this.loadCapacity - cS.loadCapacity);
+            int res = Math.Abs(this.loadCapacity - cS.loadCapacity);
+            return $"Разница в грузоподъёмности: {res}.";
         }
     }
 }
